@@ -19,28 +19,26 @@ const BugHorde = () => {
 
 
     const renderBody = () => {
-        console.log("keeeeeeeeyyyyysss")
-        //console.log(Object.keys(bugsData))
         let bugKeys = Object.keys(bugsData);
 
         bugKeys.forEach( bugkey => {
             console.log(bugsData[bugkey].id)
             console.log(bugsData[bugkey])
-        
+            
+        // return keys.map((key, index) => {
+        //     return <th key={index}>{key.toUpperCase()}</th>
+        // })
             return (
             <tr>      
                 <td>{bugsData[bugkey].id}</td>
             </tr>
             )
         });
-        // return keys.map((key, index) => {
-        //     return <th key={index}>{key.toUpperCase()}</th>
-        // })
     }
 
     return (
         <>
-            <NavBar />
+        <NavBar />
             {console.log(bugsData)}
             <table id='bugs'>
                 <thead><tr><td>bugs</td></tr>
