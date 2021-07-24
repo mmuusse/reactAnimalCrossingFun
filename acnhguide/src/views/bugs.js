@@ -24,14 +24,7 @@ const BugHorde = () => {
 
 
     const renderHeading = () => {
-        // return bugsData.map((bug, index) => {
-        //         return <th key={index}>{bug.toUpperCase()}</th>
-        //     })
     }
-
-
-
-
 
     const renderBody = () => {
         if(!bugsData){
